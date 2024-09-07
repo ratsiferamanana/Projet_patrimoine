@@ -1,0 +1,14 @@
+.tittle{
+    color: rgb(196, 134, 20);
+}
+
+.aNav{
+    background-color: #424141 !important; 
+    margin-bottom: 4vh !important;
+    border-radius: 5px;
+}
+
+.search{
+    border-color: white !important;
+    color: white;
+}

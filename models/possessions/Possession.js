@@ -13,7 +13,7 @@ export default class Possession {
   }
 
   getValeurApresAmortissement(dateActuelle) {
-    if (dateActuelle < this.dateDebut || dateActuelle > this.dateFin) {
+    if (dateActuelle < this.dateDebut) {
       return 0;
     }
     const differenceDate = {
@@ -22,12 +22,9 @@ export default class Possession {
       day: dateActuelle.getDate() - this.dateDebut.getDate(),
     };
   
-    const tauxAnnee = differenceDate.year * this.tauxAmortissement;
-    const tauxMois = (differenceDate.month * this.tauxAmortissement) / 12;
-    const tauxJour = (differenceDate.day * this.tauxAmortissement) / 365;
-    const tauxFinal = tauxAnnee + tauxMois + tauxJour;
-  
-    const valeurFinal = Math.round(this.valeur - (this.valeur * tauxFinal) / 100);
-    return valeurFinal;
+    var raison = differenceDate.year + differenceDate.month / 12 + differenceDate.day / 365;
+
+    const result = this.valeur - this.valeur *(raison * this.tauxAmortissement / 100);
+    return result;
   }
 }

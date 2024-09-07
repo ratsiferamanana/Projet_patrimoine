@@ -1,0 +1,24 @@
+.dateInput {
+    width: 30% !important;
+}
+
+.head {
+    background-color: rgb(182, 135, 35) !important;
+}
+
+.leftcontainer{
+    display: flex;
+    flex-direction: row;
+    
+    width:70%;
+    align-items: first baseline;
+    gap: 2vw;
+}
+
+.leftcontainer button{
+    width: 20% !important;
+}
+.leftcontainer input{
+    width: 50% !important;
+}
+

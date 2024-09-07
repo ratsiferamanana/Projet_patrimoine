@@ -1,0 +1,46 @@
+ .container{
+    height: 30vw;
+    width: 50%;
+    background-color: rgb(252, 249, 249) !important;
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+h2{
+    color: rgb(182, 135, 35);
+    margin-left: 2vw;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.explanation{
+    width: 60%;
+    color: white;
+}
+
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.oneInput{
+    width: 60%;
+}
+
+.bouton{
+    width: 30% !important;
+}
+
+.selectDay{
+    width: 15% !important;
+    background-color: rgb(182, 135, 35);
+    border: none;
+    margin-bottom: 6vh;
+} 
+
+
+

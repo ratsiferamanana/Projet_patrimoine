@@ -1,0 +1,78 @@
+#root {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgb(22, 22, 22);
+}
+
+.inputContainer{
+  display: flex;
+  flex-direction: row;
+  align-items:first baseline;
+  
+}
+
+.oneSpan{
+  background-color: rgb(66, 70, 69);
+  border-color: rgb(66, 70, 69) ;
+  font-weight: bold;
+  color: white;
+}
+
+.bouton{
+  background-color: rgb(117, 117, 117);
+  border-color: rgb(117, 117, 117);
+  color: white;
+  font-weight: bold;
+}
+
+h1{
+  color: rgb(196, 134, 20);
+  font-weight: bold;
+  margin-left: 2%;
+}
+
+th{
+   background-color: rgb(224, 224, 224);
+   padding-left: 2vw;
+   padding-right: 2vw;
+   padding-top: 1vw;
+   padding-bottom: 1vw;
+  font-size: 12px;
+
+  
+}
+
+.tableau{
+  width: 100%;
+  border-radius: 20px !important;
+}
+
+.resultats{
+  color: white;
+  background-color: rgb(196, 134, 20);
+  padding: 2vh;
+  margin-left: 0vw;
+  border-radius: 10px;
+}
+
+.modifier{
+  background-color: rgb(112, 112, 112) !important;
+  border: none;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.cloture{
+  background-color: rgb(196, 134, 20) !important;
+  border: none;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.tableHead th{
+  background-color: rgb(82, 82, 82) !important;
+}

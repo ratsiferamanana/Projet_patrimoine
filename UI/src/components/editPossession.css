@@ -1,0 +1,28 @@
+.modification{
+    background-color: rgb(54, 54, 54);
+    width: 50%;
+    padding: 2rem;
+    display: flex;  
+    border-radius: 10px;
+    color: rgb(196, 134, 20);
+    font-weight: bold;
+    position: absolute!important;
+    top: 8rem;
+    left: 18rem;
+    animation: appear 0.8s ;
+    display: none ;
+   
+
+    
+}
+
+.toggledEdit {
+    display: inherit;
+}
+
+
+.fermer2{
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
