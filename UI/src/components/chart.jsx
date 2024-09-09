@@ -35,7 +35,7 @@ function MyChart() {
     const [day, setDay] = useState("1"); 
 
     useEffect(() => {
-        axios.get('https://projet-patrimoine.onrender.com/possession')
+        axios.get('http://localhost:3500/possession')
             .then((response) => {
                 const data = response.data.data;
                 if (data && data[1] && Array.isArray(data[1].data.possessions)) {
@@ -110,7 +110,7 @@ function MyChart() {
         console.log("Date fin:", dateFin);
         console.log("Jour sélectionné:", day);
     
-        axios.get('https://projet-patrimoine.onrender.com/patrimoine/range', {
+        axios.get('http://localhost:3500/patrimoine/range', {
             params: {
                 dateDebut: dateDebut,
                 dateFin: dateFin,
