@@ -30,7 +30,7 @@ function EditPossession({ possessionToEdit, onUpdate }) {
 
     const Edit = async () => {
         try {
-            const response = await axios.put(`http://localhost:3500/possession/${possessionToEdit.libelle}`, { 
+            const response = await axios.put(`https://projet-patrimoine.onrender.com/possession/${possessionToEdit.libelle}`, { 
                 dateFin, 
                 newLibelle: libelle
             });
