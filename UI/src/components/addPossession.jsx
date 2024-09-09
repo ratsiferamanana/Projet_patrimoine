@@ -22,7 +22,7 @@ export function AddPossession() {
     useEffect(() => {
         const getData = async () => {
             try {
-                const response = await axios.get('http://localhost:3500/possession');
+                const response = await axios.get('https://projet-patrimoine.onrender.com/possession');
                 const newData = response.data.data;
 
                 if (JSON.stringify(newData) !== JSON.stringify(data)) {
@@ -77,7 +77,7 @@ export function AddPossession() {
           taux: tauxAmortissement
         };
       
-        axios.post("http://localhost:3500/possession", newPossession)
+        axios.post("https://projet-patrimoine.onrender.com/possession", newPossession)
           .then(response => {
             console.log("Possession ajoutée avec succès", response.data);
           })
